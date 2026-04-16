@@ -28,7 +28,7 @@ pipeline {
         withCredentials([usernamePassword(
           credentialsId: 'docker_credential_c2' ,
           usernameVariable: 'USER' ,
-          passwordVariable: 'PASS')]) {
+          passwordVariable: 'PASS' )]) {
 
           bat 'echo %PASS%| docker login -u %USER% --password-stdin'
         }
