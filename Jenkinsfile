@@ -37,7 +37,7 @@ pipeline {
 
     stage( 'Push Docker Image'){
       steps {
-        bat 'docker push %IMAGE_NAME%:latest'
+        bat 'docker push sanjanadass/new_docker_image:latest'
       }
     }
   }
